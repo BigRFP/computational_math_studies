@@ -8,6 +8,7 @@ def show_menu():
 import math
 from shapes_2d import square, rectangle, circle
 from shapes_3d import cube, cuboid, sphere
+from basic_calculator import runCalculator
 
 def shapes_2d_menu():
     while True:
@@ -74,7 +75,6 @@ def shapes_3d_menu():
         else:
             print("Option invalid!")
 
-
 #main loop
 while True:
     show_menu()
@@ -85,7 +85,7 @@ while True:
     elif options == "2":
         shapes_3d_menu()
     elif options == "3":
-        print("WORK IN PROGRESS")
+        runCalculator()
     elif options == "4":
         print("Bye")
         break
